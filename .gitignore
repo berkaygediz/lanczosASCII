@@ -175,3 +175,4 @@ cython_debug/
 *.mp4
 *.txt
 *.jpg
+!requirements.txt
