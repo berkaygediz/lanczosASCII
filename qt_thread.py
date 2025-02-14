@@ -42,3 +42,26 @@ class VideoThread(QThread):
 
         final_result = f"Frames: {self.frame_count}\n"
         self.update_final_signal.emit(final_result)
+
+    # def update_text_edit(self, frame):
+    #     frame = frame[16:]
+    #     content = f"""
+    #     <html>
+    #         <head>
+    #             <style>
+    #                 body {{
+    #                     font-family: 'Courier', monospace;
+    #                     font-size: 14px;
+    #                     white-space: pre-wrap;
+    #                     color: white;
+
+    #                 }}
+    #             </style>
+    #         </head>
+    #         <body>
+    #             {frame}
+    #         </body>
+    #     </html>
+    #     """
+
+    #     self.TextArea.setHtml(content)
